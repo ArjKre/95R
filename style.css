@@ -25,9 +25,8 @@
 }
 *{
     box-sizing: border-box;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -44,26 +43,34 @@ a{
     
 }
 /* need to fix the padding */
+
+.nav{
+    width: 100%;
+}
+
 .navbar{
-    padding: 10px;
-    font: normal normal 600 20px/24px ProximaNovaSemibold;
+    padding-block: 10px;
+    padding-inline: 1.2rem;
+    font: normal normal 600 20px / 24px ProximaNovaSemibold;
     color: #707070;
     background-color: #F8F8F8;
-    width: 100vw;
-    height: 100px;
-    position: relative;
+    width: 100%;
 }
 
 .navbar ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: center;                
+    justify-content: space-between;                
      align-items: center;
 }
 .navbar li {
     padding-left: 60px;
     cursor: pointer;
+}
+.a-container{
+    display: flex;
+    flex-direction: row;
 }
 .btn {
     width: 220px;
@@ -77,10 +84,8 @@ a{
 .navbar .btn.nav{
     font: normal normal 600 20px/24px ProximaNovaSemibold;
     color: white;
-    position: absolute;
-    right: 96px;
-    top: 11px;
 }
+
 /* <---FrontPage--> */
 .content-frontpage {
     background-image:url(Images/backgroundImage.png);
